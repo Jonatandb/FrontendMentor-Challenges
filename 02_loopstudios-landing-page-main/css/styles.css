@@ -41,9 +41,9 @@ h2,
 
 .hero {
     background-image: url('../images/mobile/image-hero.jpg');
-    min-height: 80vh;
+    min-height: 95vh;
     background-size: cover;
-    padding: 2rem 1rem;
+    padding: 2rem 1.75rem;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +55,7 @@ h2,
 }
 
 .logo {
-    width: 7rem;
+    width: 9rem;
 }
 
 .open-menu,
@@ -70,13 +70,16 @@ h2,
     flex-grow: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-content h1 {
     color: var(--white);
     font-size: 2rem;
     border: 2px solid var(--white);
-    padding: 1rem;
+    padding: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
 }
 
 .mobile-menu {
@@ -275,6 +278,51 @@ main {
 }
 
 
+@media screen and (min-width: 1000px) {
+    .hero {
+        background-image: url('../images/desktop/image-hero.jpg');
+        padding: 4rem 10.5rem;
+        min-height: 77vh;
+        margin-bottom: 8rem;
+    }
+
+    .hero-content {
+        align-items: center;
+        justify-content: left;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        padding: 2.5rem 7.5rem 1.5rem 2.5rem;
+        line-height: 1.1;
+        margin-top: 4rem;
+        letter-spacing: 3px;
+    }
+
+    .logo {
+        width: 12rem;
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: block;
+    }
+
+    .desktop-menu ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        font-family: var(--text);
+    }
+
+    .desktop-menu ul li a {
+        color: var(--white);
+        font-size: .9rem;
+    }
+}
 
 .disabled {
     display: none;
