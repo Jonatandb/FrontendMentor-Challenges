@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 15px;
+}
+
 a {
     text-decoration: none;
 }
@@ -40,10 +44,10 @@ h2,
 }
 
 .hero {
-    background-image: url('../images/mobile/image-hero.jpg');
-    min-height: 95vh;
+    background-image: url(../images/mobile/image-hero.jpg);
+    min-height: 97vh;
     background-size: cover;
-    padding: 2rem 1.75rem;
+    padding: 2.5rem 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -70,21 +74,19 @@ h2,
     flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .hero-content h1 {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 2.2rem;
     border: 2px solid var(--white);
-    padding: 2rem;
+    padding: 1.5rem 2.5rem 1rem 1.5rem;
     letter-spacing: 2px;
     line-height: 1.1;
 }
 
 .mobile-menu {
     display: flex;
-
     flex-direction: column;
     background-color: var(--black);
     position: fixed;
@@ -120,10 +122,10 @@ h2,
 }
 
 main {
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .intro {
@@ -139,10 +141,16 @@ main {
     gap: 1rem;
 }
 
+.intro__info h2 {
+    font-size: 2rem;
+}
+
 .intro__info p {
-    font-size: .75rem;
-    color: var(--gray);
-    line-height: 1.8;
+    font-size: .95rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 .creations {
@@ -154,19 +162,21 @@ main {
 
 .creations > h2 {
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .creations__grid {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
 }
 
 .creations__grid > div {
     background-size: cover;
-    height: 6rem;
-    padding: 1rem;
+    height: 7.5rem;
+    padding: 1.3rem;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -177,14 +187,14 @@ main {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
     z-index: -1;
 }
 
 .creations__grid > div > h2 {
     color: var(--white);
-    font-size: 1.1rem;
-    line-height: 1.2;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .creations__grid > div:nth-child(1) {
@@ -223,20 +233,25 @@ main {
     border: 1px solid var(--black);
     width: max-content;
     text-transform: uppercase;
-    padding: .5rem 3rem;
+    padding: .5rem 2.5rem;
     background-color: transparent;
     cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    font-size: .9rem;
 }
 
 .footer {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     color: var(--white);
     padding: 2rem;
     text-align: center;
+}
+
+.logo-menu{
+    margin-top: .9rem;
 }
 
 .logo-menu,
@@ -256,13 +271,13 @@ main {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .footer-menu ul li a {
     color: var(--white);
     font-family: var(--text);
-    font-size: .75rem;;
+    font-size: .9rem;
 }
 
 .icons {
@@ -274,7 +289,7 @@ main {
 
 .copyright {
     color: var(--gray);
-    font-size: .75rem;
+    font-size: .9rem;
 }
 
 
@@ -283,7 +298,7 @@ main {
         background-image: url('../images/desktop/image-hero.jpg');
         padding: 4rem 10.5rem;
         min-height: 77vh;
-        margin-bottom: 8rem;
+        margin-bottom: 6rem;
     }
 
     .hero-content {
@@ -321,6 +336,15 @@ main {
     .desktop-menu ul li a {
         color: var(--white);
         font-size: .9rem;
+    }
+
+    main {
+        padding: 6rem 8rem;
+    }
+
+    .intro {
+        display: grid;
+
     }
 }
 
