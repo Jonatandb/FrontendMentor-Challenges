@@ -446,6 +446,38 @@ main {
     .creations__grid > div:nth-child(8) {
         background-image: url('../images/desktop/image-fisheye.jpg');
     }
+
+    .footer {
+        margin-top: 7.5rem;
+        padding: 3rem;
+        padding-right: 10rem;
+        padding-left: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-menu {
+        margin-top: 0;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .logo-menu .logo {
+        padding: 0;
+        width: 9rem;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .icons-copyright {
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
 }
 
 .disabled {
