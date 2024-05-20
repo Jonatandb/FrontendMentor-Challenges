@@ -181,6 +181,7 @@ main {
     align-items: flex-end;
     position: relative;
     isolation: isolate;
+    z-index: -1;
 }
 
 .creations__grid > div::before {
