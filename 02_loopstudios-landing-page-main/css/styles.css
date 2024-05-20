@@ -156,11 +156,11 @@ main {
 .creations {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
-.creations > h2 {
+.creations__header > h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -238,6 +238,10 @@ main {
     cursor: pointer;
     letter-spacing: 4px;
     font-size: .9rem;
+}
+
+.btn-desktop {
+    display: none;
 }
 
 .footer {
@@ -366,13 +370,81 @@ main {
         margin-left: 1rem;
     }
 
-    .intro__info h2 {
+    .intro__info h2,
+    .creations h2 {
         font-size: 3rem;
     }
 
     .intro__info p {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .btn-desktop {
+        display: block;
+    }
+
+    .creations__header {
+        display : flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .creations__header > h2 {
+        margin-bottom: 0;
+    }
+
+    .creations__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .creations__grid > div {
+        height: 28rem;
+    }
+
+    .creations__grid > div > h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .creations__grid > div:nth-child(1) {
+        background-image: url('../images/desktop/image-deep-earth.jpg');
+    }
+
+    .creations__grid > div:nth-child(2) {
+        background-image: url('../images/desktop/image-night-arcade.jpg');
+    }
+
+    .creations__grid > div:nth-child(3) {
+        background-image: url('../images/desktop/image-soccer-team.jpg');
+    }
+
+    .creations__grid > div:nth-child(4) {
+        background-image: url('../images/desktop/image-grid.jpg');
+    }
+
+    .creations__grid > div:nth-child(5) {
+        background-image: url('../images/desktop/image-from-above.jpg');
+    }
+
+    .creations__grid > div:nth-child(6) {
+        background-image: url('../images/desktop/image-pocket-borealis.jpg');
+    }
+
+    .creations__grid > div:nth-child(7) {
+        background-image: url('../images/desktop/image-curiosity.jpg');
+    }
+
+    .creations__grid > div:nth-child(8) {
+        background-image: url('../images/desktop/image-fisheye.jpg');
     }
 }
 
