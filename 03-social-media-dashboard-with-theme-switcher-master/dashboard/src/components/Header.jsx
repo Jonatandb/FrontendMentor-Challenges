@@ -26,7 +26,7 @@ const Header = () => {
         </p>
         <label
           htmlFor='darkMode'
-          className='border bg-Toggle w-12 h-6 rounded-full cursor-pointer p-[2px] relative overflow-hidden'
+          className='rotate-180 border border-Toggle bg-Toggle dark:border-Dark-Desaturated-Blue w-12 h-6 rounded-full cursor-pointer p-[2px] relative overflow-hidden'
         >
           <input
             id='darkMode'
@@ -35,7 +35,7 @@ const Header = () => {
             onClick={() => setDarkMode(!darkMode)}
           />
           <div className=' w-full h-full peer-checked:bg-Toggle-Gradient absolute top-0 left-0 '></div>
-          <div className='w-[18px] h-[18px] bg-Light-Grayish-Blue rounded-full peer-checked:translate-x-[24px] transition-all'></div>
+          <div className='w-[18px] h-[18px] bg-Light-Grayish-Blue dark:bg-Dark-Desaturated-Blue rounded-full peer-checked:translate-x-[24px] transition-all'></div>
         </label>
       </div>
     </header>
