@@ -5,7 +5,7 @@ export const OverviewCardToday = ({
   cardData: { type, network, count, percentage, isUp },
 }) => {
   return (
-    <article className='bg-Light-Grayish-Blue w-[326px] h-[125px] mb-4 mx-auto rounded-[5px] hover:brightness-95 cursor-pointer hover:dark:brightness-125 p-[27px] dark:bg-Dark-Desaturated-Blue'>
+    <article className='bg-Light-Grayish-Blue w-[326px] md:w-[250px] h-[125px] mb-4 mx-auto rounded-[5px] hover:brightness-95 cursor-pointer hover:dark:brightness-125 p-[27px] dark:bg-Dark-Desaturated-Blue'>
       <div className='flex items-center justify-between mb-[18px]'>
         <p className='font-bold text-Dark-Grayish-Blue text-sm'>{type}</p>
         <img src={icons[network]} alt={`Logo ${network}`} />

@@ -12,7 +12,7 @@ export const OverviewCardOverall = ({
   cardData: { network, user, audience, audienceType, isUp, today },
 }) => {
   return (
-    <article className='bg-Light-Grayish-Blue w-full h-[216px] mb-6 rounded-[5px] mx-auto overflow-hidden text-center dark:bg-Dark-Desaturated-Blue hover:brightness-95 cursor-pointer hover:dark:brightness-125'>
+    <article className='bg-Light-Grayish-Blue w-[326px] md:w-[250px] h-[216px] mb-6 rounded-[5px] mx-auto overflow-hidden text-center dark:bg-Dark-Desaturated-Blue hover:brightness-95 cursor-pointer hover:dark:brightness-125'>
       <div className={`${colors[network]} h-[4px] mb-6`}></div>
       <div className='flex items-center justify-center gap-2 mb-2'>
         <img src={icons[network]} alt={`Logo ${network}`} />
