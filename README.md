@@ -16,3 +16,8 @@
 
 - [Live demo](https://jonatandb.github.io/FrontendMentor-Challenges/03-social-media-dashboard-with-theme-switcher-master/dashboard/dist/index.html)
 - [Code](/03-social-media-dashboard-with-theme-switcher-master/)
+
+### [04 - Intro section with dropdown navigation switcher](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5)
+
+- Live demo
+- [Code](/04-intro-section-with-dropdown-navigation/)
