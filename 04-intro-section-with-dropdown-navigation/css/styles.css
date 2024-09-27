@@ -1,3 +1,28 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Con content-box la caja crece si su contenido crece */
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: Epilogue;
+  background-color: var(--Almost-White);
+  color: var(--Almost-Black);
+  font-size: 18px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -6,4 +31,3 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
