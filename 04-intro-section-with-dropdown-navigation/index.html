@@ -14,51 +14,63 @@
 
   <header>
     <img src="./images/logo.svg" alt="logo">
-    <img src="./images/icon-menu.svg" alt="icon-menu">
+    <img class="hamburger-menu" src="./images/icon-menu.svg" alt="icon-menu">
     <nav>
-      <ul>
-        <li>
-          <button>Features</button>
-          <img src="./images/icon-arrow-down.svg" alt="arrow down">
-          <ul>
-            <li>
-              <img src="./images/icon-todo.svg" alt="todo icon">
-              <span>Todo List</span>
-            </li>
-            <li>
-              <img src="./images/icon-calendar.svg" alt="calendar icon">
-              <span>Calendar</span>
-            </li>
-            <li>
-              <img src="./images/icon-reminders.svg" alt="reminders icon">
-              <span>Reminders</span>
-            </li>
-            <li>
-              <img src="./images/icon-planning.svg" alt="planning icon">
-              <span>Planning</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <button>Company</button>
-          <img src="./images/icon-arrow-down.svg" alt="arrow down">
-          <ul>
-            <li>
-              History
-            </li>
-            <li>
-              Our Team
-            </li>
-            <li>
-              Blog
-            </li>
-          </ul>
-        </li>
-        <li>Careers</li>
-        <li>About</li>
-      </ul>
-      <button>Login</button>
-      <button>Register</button>
+      <div class="back">
+      </div>
+
+      <div class="front">
+        <div class="close-img-container">
+          <img id="close-btn" src="./images/icon-close-menu.svg" alt="close icon">
+        </div>
+        <ul>
+          <li>
+            <button class="submenu-btn">Features
+              <img src="./images/icon-arrow-down.svg" alt="arrow down">
+            </button>
+            <ul class="features-ul">
+              <li>
+                <img src="./images/icon-todo.svg" alt="todo icon">
+                <span>Todo List</span>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="calendar icon">
+                <span>Calendar</span>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="reminders icon">
+                <span>Reminders</span>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="planning icon">
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button class="submenu-btn">Company
+              <img src="./images/icon-arrow-down.svg" alt="arrow down">
+            </button>
+            <ul class="company-ul">
+              <li>
+                History
+              </li>
+              <li>
+                Our Team
+              </li>
+              <li>
+                Blog
+              </li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="btns-container">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -67,29 +79,27 @@
       <h2>Make remote work</h2>
       <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
         productivity soar.</p>
-
       <button>Learn more</button>
-
-      <div>
-        <img src="./images/client-databiz.svg" alt="databiz logo">
-        <img src="./images/client-audiophile.svg" alt="audiophile logo">
-        <img src="./images/client-meet.svg" alt="meet logo">
-        <img src="./images/client-maker.svg" alt="marker logo">
+      <div class="logos-container">
+        <img class="databiz" src="./images/client-databiz.svg" alt="databiz logo">
+        <img class="audiophile" src="./images/client-audiophile.svg" alt="audiophile logo">
+        <img class="meet" src="./images/client-meet.svg" alt="meet logo">
+        <img class="maker" src="./images/client-maker.svg" alt="marker logo">
       </div>
     </section>
 
     <picture>
       <source srcset="./images/image-hero-mobile.png" media="(max-width: 639px)">
       <source srcset="./images/image-hero-desktop.png" media="(min-width: 640px)">
-      <img src="./images/image-hero-mobile.png" alt="hero image">
+      <img class="hero-image" src="./images/image-hero-mobile.png" alt="hero image">
     </picture>
   </main>
 
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/jonatandb" target="_blank">Jonatandb</a>.
-  </div>
+  </div> -->
 
 </body>
 

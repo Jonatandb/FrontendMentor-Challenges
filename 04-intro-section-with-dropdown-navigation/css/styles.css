@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Con content-box la caja crece si su contenido crece */
+  /* Con "box-sizing: content-box", las cajas crecen si su contenido crece */
 }
 
 @font-face {
@@ -22,6 +22,165 @@ body {
   color: var(--Almost-Black);
   font-size: 18px;
 }
+
+button {
+  background-color: var(--Almost-White);
+  border: none;
+  cursor: pointer;
+  color: var(--Medium-Gray);
+  font-family: Epilogue;
+  font-size: 1em;
+  /* em toma como referencia lo que se estableció para el body{} */
+  /* rem toma como referencia lo que se estableció en el :root{} */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 16px 24px;
+
+  & .hamburger-menu {
+    cursor: pointer;
+    display: none;
+  }
+
+  & nav {
+    color: var(--Medium-Gray);
+    /* display: none; */
+
+    & .back {
+      opacity: 0.75;
+      background-color: var(--Medium-Gray);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 780px;
+    }
+
+    & .front {
+      background-color: var(--Almost-White);
+      width: 240px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 780px;
+      padding: 20px;
+    }
+
+    & .close-img-container {
+      text-align: right;
+      cursor: pointer;
+    }
+
+    & li {
+      list-style: none;
+      cursor: pointer;
+      margin-bottom: 26px;
+    }
+
+    & .features-ul,
+    .company-ul {
+      margin-left: 18px;
+
+    }
+
+    & .submenu-btn {
+      width: 110px;
+      height: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 24px 0;
+    }
+
+    & .btns-container {
+      position: absolute;
+      bottom: 124px;
+    }
+
+    & .login-btn {
+      display: block;
+      margin: 0 auto 16px;
+    }
+
+    & .register-btn {
+      border: 1px solid var(--Almost-Black);
+      width: 195px;
+      height: 42px;
+      border-radius: 14px;
+    }
+  }
+
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+
+  & .hero-image {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  & h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 16px
+  }
+
+  & p {
+    text-align: center;
+    line-height: 26px;
+    color: var(--Medium-Gray);
+    margin: 0 16px 24px;
+    font-size: 0.89em;
+  }
+
+  & button {
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    width: 136px;
+    height: 48px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 52px;
+
+    &:hover {
+      background-color: var(--Almost-White);
+      color: var(--Almost-Black);
+      border: 1px solid var(--Almost-Black);
+      font-weight: 700;
+    }
+  }
+
+  & .logos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-bottom: 96px;
+  }
+
+  & .databiz {
+    width: 81px;
+  }
+
+  & .audiophile {
+    width: 52px;
+  }
+
+  & .meet {
+    width: 64px;
+  }
+
+  & .maker {
+    width: 59px;
+  }
+}
+
 
 .attribution {
   font-size: 11px;
