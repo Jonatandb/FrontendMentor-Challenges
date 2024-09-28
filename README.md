@@ -19,5 +19,5 @@
 
 ### [04 - Intro section with dropdown navigation switcher](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5)
 
-- Live demo
+- [Live demo](https://jonatandb.github.io/FrontendMentor-Challenges/04-intro-section-with-dropdown-navigation)
 - [Code](/04-intro-section-with-dropdown-navigation/)
