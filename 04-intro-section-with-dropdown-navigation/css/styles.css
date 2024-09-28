@@ -218,16 +218,52 @@ main {
         align-items: center;
         width: 378px;
         justify-content: space-between;
+        gap: 22px;
       }
 
       & li {
         margin: 0;
       }
 
+      & .features-ul,
+      .company-ul {
+        background-color: var(--Almost-White);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        width: 153px;
+        height: 160px;
+        position: absolute;
+        display: none;
+        top: 35px;
+        padding: 18px 24px;
+        font-size: 0.875em;
+
+        & li {
+          margin-bottom: 16px;
+        }
+      }
+
+      & .features-ul-container,
+      .company-ul-container {
+        position: relative;
+      }
+
+      & .features-ul {
+        left: -70px;
+      }
+
+      & .company-ul {
+        left: -20px;
+        height: 120px;
+      }
+
       & .submenu-btn {
         margin: 0;
       }
 
+      & #features-btn, #company-btn {
+        width: 100px;
+      }
       & .btns-container {
         display: flex;
         position: static;
@@ -313,7 +349,7 @@ main {
 
 }
 
-/*
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -321,4 +357,4 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}

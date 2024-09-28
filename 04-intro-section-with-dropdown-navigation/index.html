@@ -14,7 +14,7 @@
 
   <header>
     <img src="./images/logo.svg" alt="logo">
-    <img class="hamburger-menu" src="./images/icon-menu.svg" alt="icon-menu">
+    <img id="hamburger-menu" class="hamburger-menu" src="./images/icon-menu.svg" alt="icon-menu">
     <nav id="navbar">
       <div class="back">
       </div>
@@ -24,11 +24,11 @@
           <img id="close-btn" src="./images/icon-close-menu.svg" alt="close icon">
         </div>
         <ul>
-          <li>
-            <button class="submenu-btn">Features
-              <img src="./images/icon-arrow-down.svg" alt="arrow down">
+          <li class="features-ul-container">
+            <button id="features-btn" class="submenu-btn">Features
+              <img id="features-btn-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
             </button>
-            <ul class="features-ul">
+            <ul id="features-ul" class="features-ul">
               <li>
                 <img src="./images/icon-todo.svg" alt="todo icon">
                 <span>Todo List</span>
@@ -47,11 +47,11 @@
               </li>
             </ul>
           </li>
-          <li>
-            <button class="submenu-btn">Company
-              <img src="./images/icon-arrow-down.svg" alt="arrow down">
+          <li class="company-ul-container">
+            <button id="company-btn" class="submenu-btn">Company
+              <img id="company-btn-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
             </button>
-            <ul class="company-ul">
+            <ul id="company-ul" class="company-ul">
               <li>
                 History
               </li>
@@ -96,10 +96,10 @@
   </main>
 
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/jonatandb" target="_blank">Jonatandb</a>.
-  </div> -->
+  </div>
 
   <script src="./main.js"></script>
 </body>
