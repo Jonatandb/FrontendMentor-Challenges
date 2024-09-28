@@ -42,12 +42,12 @@ header {
 
   & .hamburger-menu {
     cursor: pointer;
-    display: none;
+    /* display: none; */
   }
 
   & nav {
     color: var(--Medium-Gray);
-    /* display: none; */
+    display: none;
 
     & .back {
       opacity: 0.75;
